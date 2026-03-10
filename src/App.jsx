@@ -2,17 +2,17 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [number, setnumber] = useState(0)
+  const [number, set_number] = useState(0)
 
   const increment=()=>{
-    setnumber(number+1)
+    set_number(number+1)
   }
   const decrement=()=>{
-  if(number>0) setnumber(number-1)
+  if(number>0) set_number(number-1)
   }
- 
+
   const reset=()=>{
-    setnumber(0)
+    set_number(0)
   }
 
   return (
@@ -26,6 +26,5 @@ function App() {
   )    
 }
         
-
 
 export default App
